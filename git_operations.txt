@@ -1,0 +1,166 @@
+
+29129@Railgun MINGW64 ~
+$ git clone https://github.com/用户名/仓库名.git 本地目录名
+Cloning into '本地目录名'...
+remote: Repository not found.
+fatal: repository 'https://github.com/用户名/仓库名.git/' not found
+
+29129@Railgun MINGW64 ~
+$ cd /d/second_repo/
+
+29129@Railgun MINGW64 /d/second_repo
+$ git init
+Initialized empty Git repository in D:/second_repo/.git/
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ ^C
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ config user.name
+bash: config: command not found
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git config user.name
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git remote add origin https://github.com/Misaka1174/second_repo
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git add task.txt
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git commit -m "Add task file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got '29129@Railgun.(none)')
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$   git push -u origin master  # 首次推送需加`-u`参数
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Misaka1174/second_repo'
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Misaka1174/second_repo'
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ ^C
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$    git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Misaka1174/second_repo'
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git pull origin master
+fatal: couldn't find remote ref master
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Misaka1174/second_repo'
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git branch
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ ^C
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Misaka1174/second_repo'
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ echo "# My Project" >README.me
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git add README.me
+warning: in the working copy of 'README.me', LF will be replaced by CRLF the next time Git touches it
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git commit -m "Initial commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got '29129@Railgun.(none)')
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git branch
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git config --global user.email "2912930057@qq.com"
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git confit --global user.name "Misaka1174"
+git: 'confit' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git config --global user.name "Misaka1174"
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 724ca84] Initial commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 README.me
+ create mode 100644 task.txt
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git branch
+* master
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 271 bytes | 271.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Misaka1174/second_repo
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git add git_operations.txt
+fatal: pathspec 'git_operations.txt' did not match any files
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git add git_operations.txt
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git commit -m "add git operations"
+[master 65c4f9d] add git operations
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git_operations.txt
+
+29129@Railgun MINGW64 /d/second_repo (master)
+$ git push
+
